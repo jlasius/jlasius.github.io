@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Julian Lasius | Agile Coach & Technical Program Manager</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <h1>Julian Lasius</h1>
+        <p>Agile Coach & Technical Program Manager</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my experience and skills:</p>
+            <a href="path/to/your-resume.pdf" download class="resume-download">Download Resume (PDF)</a>
+
+            <!-- Embedded Resume (Optional) -->
+            <iframe src="path/to/your-resume.pdf" width="100%" height="600px" style="border: none;"></iframe>
+        </section>
+
+        <!-- Testimonial Carousel -->
+        <section id="testimonials">
+            <h2>What People Say About Me</h2>
+            <div class="carousel">
+                <div class="testimonial">
+                    <p>"Julian is an exceptional Agile Coach who transformed our team's productivity and morale. Highly recommend!"</p>
+                    <p><strong>- John Doe, CEO at XYZ Corp</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Julian's technical program management skills are top-notch. He delivered our project ahead of schedule and under budget."</p>
+                    <p><strong>- Jane Smith, CTO at ABC Inc</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Julian's leadership and conflict resolution skills are unparalleled. He brought our team back on track."</p>
+                    <p><strong>- Sarah Lee, Product Manager at DEF Co</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Julian's workshops on agile methodologies were eye-opening. Our team is now more aligned and efficient."</p>
+                    <p><strong>- Mike Brown, Engineering Lead at GHI Ltd</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Julian is a true professional. His ability to manage complex programs is remarkable."</p>
+                    <p><strong>- Emily Davis, Director at JKL Solutions</strong></p>
+                </div>
+                <div class="testimonial">
+                    <p>"Julian's coaching helped us adopt agile practices seamlessly. Our delivery times have improved significantly."</p>
+                    <p><strong>- Chris Wilson, Scrum Master at MNO Tech</strong></p>
+                </div>
+            </div>
+            <button class="carousel-button prev">&#10094;</button>
+            <button class="carousel-button next">&#10095;</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Julian Lasius. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        let currentIndex = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        const totalTestimonials = testimonials.length;
+
+        function showTestimonial(index) {
+            testimonials.forEach((testimonial, i) => {
+                testimonial.style.display = i === index ? 'block' : 'none';
+            });
+        }
+
+        document.querySelector('.next').addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % totalTestimonials;
+            showTestimonial(currentIndex);
+        });
+
+        document.querySelector('.prev').addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+            showTestimonial(currentIndex);
+        });
+
+        // Show the first testimonial initially
+        showTestimonial(currentIndex);
+    </script>
+</body>
+</html>
