@@ -210,7 +210,6 @@ h3 {
 }
 
 /* Testimonial Carousel */
-/* Testimonial Carousel */
 #testimonials {
     text-align: center;
     padding: 20px;
@@ -225,6 +224,7 @@ h3 {
     max-width: 600px;
     margin: 0 auto;
     overflow: hidden;
+    min-height: 200px; /* Ensure carousel has a minimum height */
 }
 
 .testimonial {
@@ -234,7 +234,6 @@ h3 {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: left;
-    margin-bottom: 20px; /* Add space for buttons */
 }
 
 .testimonial p {
@@ -252,9 +251,8 @@ h3 {
 
 .carousel-button {
     position: absolute;
-    top: auto; /* Remove top positioning */
-    bottom: 20px; /* Position buttons at the bottom */
-    transform: translateY(0); /* Remove vertical centering */
+    top: 50%; /* Position buttons at mid-height */
+    transform: translateY(-50%); /* Center vertically */
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     border: none;
@@ -280,10 +278,11 @@ h3 {
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px;
+    padding: 10px; /* Reduced padding for a smaller footer */
     background-color: #2c3e50;
     color: #fff;
     margin-top: 40px;
+    font-size: 0.9rem; /* Smaller font size */
 }
 
 footer p {
