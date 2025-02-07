@@ -110,6 +110,7 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: 0 auto;
+    text-align: left; /* Ensure all text is left-aligned */
 }
 
 h2 {
@@ -144,7 +145,7 @@ h3 {
 /* Contact Info */
 .contact-info {
     margin: 20px 0;
-    text-align: center;
+    text-align: left; /* Left-align contact info */
 }
 
 .contact-info a {
@@ -163,6 +164,7 @@ h3 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left-align all section content */
 }
 
 /* Job Experience */
@@ -209,7 +211,7 @@ h3 {
 
 /* Testimonial Carousel */
 #testimonials {
-    text-align: center;
+    text-align: center; /* Center-align carousel */
     padding: 20px;
     background-color: #ecf0f1;
     margin-top: 40px;
@@ -229,6 +231,7 @@ h3 {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Left-align testimonial text */
 }
 
 .testimonial p {
