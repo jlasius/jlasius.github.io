@@ -32,3 +32,115 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.portfolio-item {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-item h3 {
+    color: #333;
+    margin-top: 0;
+}
+
+.portfolio-item p {
+    margin: 10px 0;
+}
+
+.portfolio-item ul {
+    list-style-type: disc;
+    margin: 10px 0 10px 20px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+/* Resume Section */
+#resume {
+    text-align: center;
+    padding: 20px;
+}
+
+.resume-download {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.resume-download:hover {
+    background-color: #555;
+}
+
+iframe {
+    margin-top: 20px;
+}
+
+/* Testimonial Carousel */
+#testimonials {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    margin-top: 40px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.testimonial {
+    display: none;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial p {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
