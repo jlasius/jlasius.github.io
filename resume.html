@@ -158,28 +158,48 @@
 
     <!-- JavaScript for Carousel -->
     <script>
-        let currentIndex = 0;
-        const testimonials = document.querySelectorAll('.testimonial');
-        const totalTestimonials = testimonials.length;
 
-        function showTestimonial(index) {
-            testimonials.forEach((testimonial, i) => {
-                testimonial.style.display = i === index ? 'block' : 'none';
-            });
-        }
+let currentIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
+const totalTestimonials = testimonials.length;
 
-        document.querySelector('.next').addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % totalTestimonials;
-            showTestimonial(currentIndex);
-        });
+// Function to show the current testimonial
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.style.display = i === index ? 'block' : 'none';
+    });
+}
 
-        document.querySelector('.prev').addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
-            showTestimonial(currentIndex);
-        });
+// Function to move to the next testimonial
+function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % totalTestimonials;
+    showTestimonial(currentIndex);
+}
 
-        // Show the first testimonial initially
-        showTestimonial(currentIndex);
+// Function to start the auto-slide interval
+function startAutoSlide() {
+    setInterval(nextTestimonial, 6000); // Move to the next testimonial every 6 seconds
+}
+
+// Event listeners for manual navigation
+document.querySelector('.next').addEventListener('click', () => {
+    nextTestimonial();
+});
+
+document.querySelector('.prev').addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + totalTestimonials) % totalTestimonials;
+    showTestimonial(currentIndex);
+});
+
+// Show the first testimonial initially
+showTestimonial(currentIndex);
+
+// Start the auto-slide functionality
+startAutoSlide();
+
+
+
+
     </script>
 </body>
 </html>
