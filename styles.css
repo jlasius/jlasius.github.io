@@ -142,7 +142,14 @@ h3 {
     background-color: #2980b9;
 }
 
+/* new.. BUTTONS */
 
+@media (max-width: 600px) {
+    .contact-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 /* Contact Buttons */
 .contact-buttons {
@@ -311,8 +318,6 @@ h3 {
 .carousel-button:hover {
     background-color: rgba(0, 0, 0, 0.8);
 }
-
-BYEEEE
 
 
 /* Footer */
