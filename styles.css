@@ -142,6 +142,8 @@ h3 {
     background-color: #2980b9;
 }
 
+
+/* POSSIBLY OLD /*
 /* Contact Info */
 .contact-info {
     margin: 20px 0;
@@ -156,6 +158,56 @@ h3 {
 .contact-info a:hover {
     text-decoration: underline;
 }
+
+/* NEW/*
+/* Contact Buttons */
+.contact-buttons {
+    display: flex;
+    gap: 20px; /* Space between buttons */
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 30px;
+}
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button span {
+    margin-right: 10px; /* Space between icon and text */
+}
+
+/* Email Button */
+.email-button {
+    background-color: #3498db; /* Blue */
+    color: #fff;
+}
+
+.email-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* LinkedIn Button */
+.linkedin-button {
+    background-color: #0077b5; /* LinkedIn blue */
+    color: #fff;
+}
+
+.linkedin-button:hover {
+    background-color: #005f8b; /* Darker LinkedIn blue on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /* Sections */
 .education, .certifications-skills, .work-experience, .languages, .personal {
