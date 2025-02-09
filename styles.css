@@ -143,23 +143,7 @@ h3 {
 }
 
 
-/* POSSIBLY OLD /*
-/* Contact Info */
-.contact-info {
-    margin: 20px 0;
-    text-align: left; /* Left-align contact info */
-}
 
-.contact-info a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-/* NEW/*
 /* Contact Buttons */
 .contact-buttons {
     display: flex;
