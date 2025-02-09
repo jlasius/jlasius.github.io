@@ -142,8 +142,9 @@ h3 {
     background-color: #2980b9;
 }
 
-/* new.. BUTTONS */
 
+
+/* Contact Buttons */
 @media (max-width: 600px) {
     .contact-buttons {
         flex-direction: column;
@@ -151,7 +152,7 @@ h3 {
     }
 }
 
-/* Contact Buttons */
+
 .contact-buttons {
     display: flex;
     gap: 20px; /* Space between buttons */
